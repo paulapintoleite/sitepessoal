@@ -1,0 +1,589 @@
+/*******************************/
+/******* HEADER ****************/
+/*******************************/
+header{
+  position: relative;
+  width: 100%;
+  color: rgb(95 118 98);
+  background-color: white;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+header li { 
+  display: inline; 
+}
+header img {width: 40px; height: 38px; float:right;}
+.right{float:right; margin-left: 5px; margin-right: 200px; }
+.name {font-size: 35px; font-weight: bold; letter-spacing: 2px; margin-left: 200px;}
+
+/*******************************/
+/******* BODY ****************/
+/*******************************/
+
+body {
+  color: #1b1b1b;
+  background:white;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+/*******************************/
+/******* MENU ****************/
+/*******************************/
+.menu{
+  margin-left: 200px; background-color: rgb(95 118 98); 
+}
+
+.menu1{
+  background-color: rgb(95 118 98);
+  margin: auto;
+  font-size: 18px;
+  line-height: 60px;
+  top: 0;
+  position: sticky;
+}
+.menu ul a{
+  background-color: rgb(95 118 98);
+  width: 900px;
+  margin: auto;
+  height: 40px;
+  text-decoration: none; 
+  padding: 10px; 
+  color: white;
+}
+.menu a:hover {
+  background-color: white; 
+  color:rgb(95 118 98)}
+  
+/********************************************/
+/******* RODAPE e BOTAO TOPO ****************/
+/*******************************************/ 
+
+footer{
+  bottom: 0;
+  width: 100%;
+  background-color:rgb(95 118 98);
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.topo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color:rgb(95 118 98);
+  text-decoration: none;
+}
+.topo::after {
+  content: "▲";
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  transition: margin-top 250ms;
+}
+/*******************************/
+/******* INDEX ****************/
+/*******************************/ 
+div.forma{
+  width: 100%;
+  height: 800px;
+}
+div img {
+  height: 600px;
+  width: auto;
+  float: left;
+  padding-left: 250px;
+  padding-top: 100px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+  margin: auto;
+}
+.botao{
+  background-color: rgb(95 118 98);
+  color:white;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 25px;
+  border: rgb(95 118 98) 1px solid;
+  font-size: 14px;   
+}
+div.text a:hover {
+  background-color: white; 
+  color:rgb(95 118 98);
+  border: rgb(95 118 98) 1px solid;}
+
+.about{ 
+  padding-top: 100px;
+  padding-right: 300px;
+}
+
+.about2{
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgb(95 118 98);
+  font-weight: bold;
+  margin: 3px;
+}
+.about3{
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 1px;
+  padding-bottom: 10px;
+}
+.text p {
+  padding-bottom: 15px;
+  font-size: 18px;
+  margin: 25px;
+  padding-right: 200px;
+}
+
+
+/*******************************/
+/******* COMUM *****************/
+/*******************************/
+
+
+.forma1{
+  width: auto;
+  height: 700px;
+  top: 50px;
+  left: 150px;
+  margin-right: 200px;
+  padding-top: 100px;
+  margin-left: 250px; 
+  line-height: 20px;
+  padding-bottom: 20px;
+  }
+
+.about4{
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgb(95 118 98);
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+
+/*******************************/
+/******* DADOS PESSOAIS ********/
+/*******************************/
+
+.topicos {
+  font-size: 19px;
+  line-height: 20px;
+  padding-right: 200px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+li {
+  list-style-type: square;
+}
+
+
+/*******************************/
+/******* Carrosel **************/
+/*******************************/
+
+/******https://codepen.io/tianyili/pen/qBEdeoy******/
+
+.pic-ctn {
+  float: right;
+}
+  
+@keyframes display {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+}
+ 
+.pic-ctn > img {
+  position: absolute;
+  top: 150px;
+  width: auto;
+  height: 400px;
+  right: 130px;
+  opacity: 0;
+  animation: display 10s infinite;
+  z-index: -50;;
+}
+  
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+
+/*******************************/
+/******* INVESTIGACAO  *********/
+/*******************************/
+
+.topicos1 {
+  padding-top: 15px;
+  font-size: 22px;
+  line-height: 20px;
+  padding-right: 200px;
+  font-weight: bold;
+  color: black;
+  padding-left: 25px;
+}
+
+.text1{
+  font-size: 17px;
+  padding-bottom: 30px;
+  width: auto;
+  padding-left: 25px;
+}
+
+
+.pdf{
+  background-color: white;
+  color:rgb(95 118 98);
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 25px;
+  border: rgb(95 118 98) 1px solid;
+  font-size: 14px;  
+  width: 40px; 
+  font-size: 14px;
+}
+
+div.text1 a:hover {
+  background-color:rgb(95 118 98); 
+  color:white;
+  border: white 1px solid;
+}
+
+.formainv{
+  width: auto;
+  height: 400px;
+  top: 50px;
+  left: 150px;
+  margin-right: 200px;
+  padding-top: 100px;
+  margin-left: 250px; 
+  line-height: 20px;
+  padding-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+.formainv01{
+  width: auto;
+  height: 700px;
+  top: 50px;
+  left: 150px;
+  margin-right: 200px;
+  padding-top: 100px;
+  margin-left: 250px; 
+  line-height: 20px;
+  padding-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+.barras2{
+  width: 800px;
+  height: 100px;
+  margin-left: 250px; 
+  margin-top: 100px;
+  line-height: 25px;
+  padding-bottom: 5px;
+}
+
+.orcid{
+  background-color: rgb(95 118 98);
+  color:white;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-left: 95px;
+  padding-right: 95px;
+  border-radius: 5px;
+  border: rgb(95 118 98) 1px solid;
+  font-size: 14px;  
+  height: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 30px;
+
+}
+div.barras2 a:hover {
+  background-color:white; 
+  color:rgb(95 118 98);
+  border: rgb(95 118 98) 1px solid;
+}
+
+div.barras2 a:hover {
+  background-color:white; 
+  color:rgb(95 118 98);
+  border: rgb(95 118 98) 1px solid;
+}
+/*******************************/
+/******* CV  *******************/
+/*******************************/
+
+.text2{
+  font-size: 18px;
+  width: auto;
+  line-height: 25px;
+  padding-left: 20px;
+}
+
+.aboutinv{
+  font-size: 19px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 50px;
+  background-color: rgb(95 118 98);
+  width: 800px;
+  padding-left: 20px;
+}
+
+.aboutinv1{
+  font-size: 21px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgb(95 118 98);
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin: 0px;
+}
+
+.topicos2 {
+  padding-top: 25px;
+  font-size: 22px;
+  line-height: 20px;
+  padding-right: 200px;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 5px;
+
+}
+
+.topicos3 {
+  padding-top: 15px;
+  font-size: 22px;
+  line-height: 5px;
+  padding-right: 200px;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 5px;
+
+}
+.formaCV{
+  width: auto;
+  height: 1400px;
+  top: 50px;
+  left: 150px;
+  margin-right: 200px;
+  padding-top: 100px;
+  margin-left: 250px; 
+  line-height: 20px;
+  padding-bottom: 0px;
+}
+
+
+/*******************************/
+/******* BARRAS PROGRESSO ******/
+/***https://www.treinaweb.com.br/blog/barra-de-progresso-que-muda-de-tamanho-e-cor-com-apenas-uma-variavel-do-css*****************/
+
+.progressPro{
+  height: 20px;
+  padding: 5px;
+  background-color: #ccc;
+  width: 300px;
+  display: flex;
+}
+.progressPro::before{
+  content: "";
+  width: 80%;
+  background-color: rgb(95 118 98);
+}
+.progressMap{
+  height: 20px;
+  padding: 5px;
+  background-color: #ccc;
+  width: 300px;
+  display: flex;
+}
+.progressMap::before{
+  content: "";
+  width: 90%;
+  background-color: rgb(95 118 98);
+}
+.progressGis{
+  height: 20px;
+  padding: 5px;
+  background-color: #ccc;
+  width: 300px;
+  display: flex;
+}
+.progressGis::before{
+  content: "";
+  width: 50%;
+  background-color: rgb(95 118 98);
+}
+.progressIber{
+  height: 20px;
+  padding: 5px;
+  background-color: #ccc;
+  width: 300px;
+  display: flex;
+}
+.progressIber::before{
+  content: "";
+  width: 30%;
+  background-color: rgb(95 118 98);
+}
+.progressPost{
+  height: 20px;
+  padding: 5px;
+  background-color: #ccc;
+  width: 300px;
+  display: flex;
+}
+.progressPost::before{
+  content: "";
+  width: 30%;
+  background-color: rgb(95 118 98);
+}
+.progressPy{
+  height: 20px;
+  padding: 5px;
+  background-color: #ccc;
+  width: 300px;
+  display: flex;
+}
+.progressPy::before{
+  content: "";
+  width: 30%;
+  background-color: rgb(95 118 98);
+}
+.progressR{
+  height: 20px;
+  padding: 5px;
+  background-color: #ccc;
+  width: 300px;
+  display: flex;
+}
+.progressR::before{
+  content: "";
+  width: 50%;
+  background-color: rgb(95 118 98);
+}
+.progressWeb{
+  height: 20px;
+  padding: 5px;
+  background-color: #ccc;
+  width: 300px;
+  display: flex;
+}
+.progressWeb::before{
+  content: "";
+  width: 50%;
+  background-color: rgb(95 118 98);
+}
+.progressMO{
+  height: 20px;
+  padding: 5px;
+  background-color: #ccc;
+  width: 300px;
+  display: flex;
+}
+.progressMO::before{
+  content: "";
+  width: 70%;
+  background-color: rgb(95 118 98);
+}
+.progressBi{
+  height: 20px;
+  padding: 5px;
+  background-color: #ccc;
+  width: 300px;
+  display: flex;
+}
+.progressBi::before{
+  content: "";
+  width: 50%;
+  background-color: rgb(95 118 98);
+}
+.barras{
+  width: 350px;
+  height: 520px;
+  top: 10px;
+  margin-left: 250px; 
+  line-height: 25px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 20px;  
+  float: left;
+}
+.barras1{
+  width: 350px;
+  height: 520px;
+  position: relative;
+  margin-left: 650px; 
+  line-height: 25px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  z-index:-50; 
+}
+.topicos4 {
+  padding-top: 15px;
+  font-size: 22px;
+  line-height: 5px;
+  padding-right: 20px;
+  font-weight: bold;
+  color: black;
+}
+.topicos5 {
+  padding-top: 2px;
+  font-size: 22px;
+  line-height: 2px;
+  padding-right: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+
